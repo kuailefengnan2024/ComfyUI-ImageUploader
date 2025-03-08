@@ -1,12 +1,11 @@
+# 文件路径: G:\ComfyUI-aki-v1.4\custom_nodes\ComfyUI-ImageUploader\__init__.py
 import os
 import requests
+import torch
+import numpy as np
+from PIL import Image
 
-# 假设正确的导入方式是从 comfy.utils 导入（需要你确认）
-try:
-    from comfy.utils import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
-except ImportError:
-    raise ImportError("无法导入 NODE_CLASS_MAPPINGS 和 NODE_DISPLAY_NAME_MAPPINGS，请检查 ComfyUI 安装或模块路径")
-
+# 定义节点类
 class UploadImageToImageHost:
     @classmethod
     def INPUT_TYPES(cls):
@@ -43,12 +42,6 @@ class UploadImageToImageHost:
         IMGBB_API_URL = "https://api.imgbb.com/1/upload"
 
         # 将 ComfyUI 的图像 tensor 转换为本地文件
-        import torch
-        import numpy as np
-        from PIL import Image
-        import io
-
-        # 将 tensor 转换为 PIL 图像
         image_np = np.clip(image[0].cpu().numpy() * 255, 0, 255).astype(np.uint8)
         pil_image = Image.fromarray(image_np)
 
@@ -77,6 +70,14 @@ class UploadImageToImageHost:
 
         return (image_url,)
 
-# 注册节点到 ComfyUI
-NODE_CLASS_MAPPINGS["UploadImageToImageHost"] = UploadImageToImageHost
-NODE_DISPLAY_NAME_MAPPINGS["UploadImageToImageHost"] = "Upload Image to Image Host"
+# 手动定义节点映射字典
+NODE_CLASS_MAPPINGS = {
+    "UploadImageToImageHost": UploadImageToImageHost
+}
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "UploadImageToImageHost": "Upload Image to Image Host"
+}
+
+# 可选：添加模块加载提示
+print("ComfyUI-ImageUploader 节点已加载")
