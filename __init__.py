@@ -1,6 +1,11 @@
 import os
 import requests
-from comfy import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS  # 修改为 from comfy
+
+# 假设正确的导入方式是从 comfy.utils 导入（需要你确认）
+try:
+    from comfy.utils import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+except ImportError:
+    raise ImportError("无法导入 NODE_CLASS_MAPPINGS 和 NODE_DISPLAY_NAME_MAPPINGS，请检查 ComfyUI 安装或模块路径")
 
 class UploadImageToImageHost:
     @classmethod
