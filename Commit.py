@@ -1,4 +1,4 @@
-# git pull origin master 可以更新远程仓库的代码到本地
+# git pull origin master 可以更新远程仓库的代码到本地 (在本插件的根目录下执行cmd)
 
 import os
 import subprocess
