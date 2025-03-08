@@ -1,3 +1,5 @@
+# git pull origin master 可以更新远程仓库的代码到本地
+
 import os
 import subprocess
 from datetime import datetime
