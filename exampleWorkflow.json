@@ -1,0 +1,615 @@
+{
+  "last_node_id": 33,
+  "last_link_id": 31,
+  "nodes": [
+    {
+      "id": 25,
+      "type": "UploadImageToImageHost",
+      "pos": [
+        216.51600646972656,
+        952.4639282226562
+      ],
+      "size": [
+        327.5999755859375,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image_url",
+          "label": "image_url",
+          "type": "STRING",
+          "links": [
+            18
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UploadImageToImageHost"
+      },
+      "widgets_values": [
+        "266c6a39a26a28240bf2f2339f72c1ba"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ShowText|pysssss",
+      "pos": [
+        583.14208984375,
+        957.5020751953125
+      ],
+      "size": [
+        315,
+        112
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "label": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "label": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            29
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "https://i.ibb.co/zWVhPHxy/temp-image.png"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "ShowText|pysssss",
+      "pos": [
+        602.6324462890625,
+        607.14306640625
+      ],
+      "size": [
+        315,
+        112
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "label": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "label": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            28
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "https://i.ibb.co/fdQgfLTw/temp-image.png"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "UploadImageToImageHost",
+      "pos": [
+        194.77716064453125,
+        580.9749755859375
+      ],
+      "size": [
+        327.5999755859375,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image_url",
+          "label": "image_url",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UploadImageToImageHost"
+      },
+      "widgets_values": [
+        "266c6a39a26a28240bf2f2339f72c1ba"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "LoadImage",
+      "pos": [
+        -160.8513946533203,
+        528.1787719726562
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "label": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "批注 2025-03-08 223220.png",
+        "image"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "LoadImage",
+      "pos": [
+        -163.2057342529297,
+        959.1922607421875
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "label": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "批注 2025-03-08 222550.png",
+        "image"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "DF_String_Concatenate",
+      "pos": [
+        1054.9761962890625,
+        717.9119873046875
+      ],
+      "size": [
+        315,
+        126
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Prepend",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "Prepend"
+          },
+          "link": 28
+        },
+        {
+          "name": "Append",
+          "type": "STRING",
+          "pos": [
+            10,
+            60
+          ],
+          "widget": {
+            "name": "Append"
+          },
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "TEXT",
+          "label": "TEXT",
+          "type": "STRING",
+          "links": [
+            30
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DF_String_Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        " "
+      ]
+    },
+    {
+      "id": 28,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1466.9730224609375,
+        699.3699340820312
+      ],
+      "size": [
+        634.4019775390625,
+        136.26177978515625
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "label": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "label": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "https://i.ibb.co/fdQgfLTw/temp-image.png https://i.ibb.co/zWVhPHxy/temp-image.png"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "PreviewImage",
+      "pos": [
+        2634.48779296875,
+        563.5884399414062
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "label": "images",
+          "type": "IMAGE",
+          "link": 13
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "MidjourneyImagineNode",
+      "pos": [
+        2162.409912109375,
+        563.8424072265625
+      ],
+      "size": [
+        400,
+        421
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sref",
+          "label": "sref",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            330
+          ],
+          "widget": {
+            "name": "sref"
+          },
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "links": [
+            13
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "task_id",
+          "label": "task_id",
+          "type": "STRING",
+          "links": [
+            31
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "buttons",
+          "label": "buttons",
+          "type": "DICT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MidjourneyImagineNode"
+      },
+      "widgets_values": [
+        "cat,cute,",
+        "midjourney",
+        "6",
+        "1:1",
+        100,
+        0,
+        0,
+        false,
+        false,
+        "",
+        1,
+        975,
+        "randomize",
+        true
+      ]
+    },
+    {
+      "id": 33,
+      "type": "MidjourneyActionNode",
+      "pos": [
+        2630.264892578125,
+        891.5487670898438
+      ],
+      "size": [
+        352.79998779296875,
+        82
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "task_id"
+          },
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MidjourneyActionNode"
+      },
+      "widgets_values": [
+        "",
+        "U1"
+      ]
+    }
+  ],
+  "links": [
+    [
+      10,
+      12,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      11,
+      11,
+      0,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      13,
+      15,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      24,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      25,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      28,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      28,
+      14,
+      0,
+      32,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      26,
+      0,
+      32,
+      1,
+      "STRING"
+    ],
+    [
+      30,
+      32,
+      0,
+      28,
+      0,
+      "STRING"
+    ],
+    [
+      31,
+      15,
+      1,
+      33,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909097,
+      "offset": [
+        -1588.6967573084096,
+        -120.98303435033165
+      ]
+    }
+  },
+  "version": 0.4
+}
