@@ -54,7 +54,7 @@ class UploadImageToImageHost:
             with open(temp_file, "rb") as file:
                 payload = {
                     "key": api_key,  # 使用用户输入的 API Key
-                    "expiration": 54000,  # 设置图片在 9000 分钟（600秒）后销毁
+                    "expiration": 2000000,  # 设置图片在 9000 分钟后销毁
                 }
                 files = {"image": file}
                 response = requests.post(IMGBB_API_URL, data=payload, files=files)
