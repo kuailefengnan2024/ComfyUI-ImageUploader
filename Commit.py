@@ -4,6 +4,13 @@ from datetime import datetime
 
 def git_add_commit_push():
     try:
+        # 检查是否有更改
+        status_result = subprocess.run(["git", "status", "--porcelain"], check=True, stdout=subprocess.PIPE, text=True)
+        
+        if not status_result.stdout.strip():
+            print("没有更改，未执行提交。")
+            return
+        
         # 获取当前时间作为提交信息
         commit_message = f"Auto commit: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         
