@@ -2,16 +2,17 @@ import os
 import requests
 from comfyui import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 
-# 图床 API 配置（这里以 imgbb 为例）
-IMGBB_API_KEY = "你的_imgbb_API_key"  # 需要替换为实际的 API key
-IMGBB_API_URL = "https://api.imgbb.com/1/upload"
-
 class UploadImageToImageHost:
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
                 "image": ("IMAGE", {"default": None}),  # ComfyUI 的图像输入类型
+                "api_key": ("STRING", {
+                    "multiline": False,
+                    "default": "",  # 默认值为空，用户需要填写
+                    "placeholder": "Enter your imgbb API key here"
+                }),  # 新增 API Key 输入参数
             }
         }
 
@@ -20,14 +21,22 @@ class UploadImageToImageHost:
     FUNCTION = "upload_image"  # 主函数名
     CATEGORY = "Image Utilities"  # 节点类别
 
-    def upload_image(self, image):
+    def upload_image(self, image, api_key):
         """
         上传图片到图床并返回 URL
         参数:
             image: ComfyUI 的图像输入（tensor 格式）
+            api_key: 用户输入的 imgbb API key
         返回:
             str: 图床返回的图片 URL
         """
+        # 检查 API Key 是否为空
+        if not api_key:
+            raise ValueError("请在节点中输入有效的 imgbb API Key")
+
+        # 图床 API 配置
+        IMGBB_API_URL = "https://api.imgbb.com/1/upload"
+
         # 将 ComfyUI 的图像 tensor 转换为本地文件
         import torch
         import numpy as np
@@ -46,7 +55,7 @@ class UploadImageToImageHost:
         try:
             with open(temp_file, "rb") as file:
                 payload = {
-                    "key": IMGBB_API_KEY,
+                    "key": api_key,  # 使用用户输入的 API Key
                     "expiration": 600,  # 设置图片在 10 分钟（600秒）后销毁
                 }
                 files = {"image": file}
