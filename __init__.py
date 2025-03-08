@@ -1,6 +1,6 @@
 import os
 import requests
-from comfyui import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+from comfy import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS  # 修改为 from comfy
 
 class UploadImageToImageHost:
     @classmethod
@@ -12,7 +12,7 @@ class UploadImageToImageHost:
                     "multiline": False,
                     "default": "",  # 默认值为空，用户需要填写
                     "placeholder": "Enter your imgbb API key here"
-                }),  # 新增 API Key 输入参数
+                }),  # API Key 输入参数
             }
         }
 
