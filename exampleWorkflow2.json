@@ -1,0 +1,1328 @@
+{
+  "last_node_id": 57,
+  "last_link_id": 55,
+  "nodes": [
+    {
+      "id": 25,
+      "type": "UploadImageToImageHost",
+      "pos": [
+        216.51600646972656,
+        952.4639282226562
+      ],
+      "size": [
+        327.5999755859375,
+        58
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image_url",
+          "label": "image_url",
+          "type": "STRING",
+          "links": [
+            18
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "aux_id": "kuailefengnan2024/ComfyUI-ImageUploader",
+        "ver": "83b3d09c6afa721be7e7aab3d2edc69a78cce502",
+        "Node name for S&R": "UploadImageToImageHost"
+      },
+      "widgets_values": [
+        "266c6a39a26a28240bf2f2339f72c1ba"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "UploadImageToImageHost",
+      "pos": [
+        194.77716064453125,
+        580.9749755859375
+      ],
+      "size": [
+        327.5999755859375,
+        58
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image_url",
+          "label": "image_url",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "aux_id": "kuailefengnan2024/ComfyUI-ImageUploader",
+        "ver": "83b3d09c6afa721be7e7aab3d2edc69a78cce502",
+        "Node name for S&R": "UploadImageToImageHost"
+      },
+      "widgets_values": [
+        "266c6a39a26a28240bf2f2339f72c1ba"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1466.9730224609375,
+        699.3699340820312
+      ],
+      "size": [
+        634.4019775390625,
+        136.26177978515625
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text",
+          "label": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "label": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.1.1",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "https://i.ibb.co/m1KF0YH/temp-image.png https://i.ibb.co/xKgGyyCY/temp-image.png"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "ShowText|pysssss",
+      "pos": [
+        602.6324462890625,
+        607.14306640625
+      ],
+      "size": [
+        315,
+        112
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text",
+          "label": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "label": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            32
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.1.1",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "https://i.ibb.co/m1KF0YH/temp-image.png"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "Text Concatenate",
+      "pos": [
+        1008.9713134765625,
+        703.25146484375
+      ],
+      "size": [
+        405.8980407714844,
+        238
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            84
+          ],
+          "widget": {
+            "name": "text_a"
+          },
+          "link": 32
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            108
+          ],
+          "widget": {
+            "name": "text_b"
+          },
+          "link": 41
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            132
+          ],
+          "widget": {
+            "name": "text_c"
+          },
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            156
+          ],
+          "widget": {
+            "name": "text_d"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            34
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-node-suite-comfyui",
+        "ver": "unknown",
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        " ",
+        "false",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ShowText|pysssss",
+      "pos": [
+        583.14208984375,
+        957.5020751953125
+      ],
+      "size": [
+        315,
+        112
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text",
+          "label": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "label": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            41
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.1.1",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "https://i.ibb.co/xKgGyyCY/temp-image.png"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Save Text File",
+      "pos": [
+        3229.548095703125,
+        681.9776611328125
+      ],
+      "size": [
+        315,
+        226
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            12
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 42
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "was-node-suite-comfyui",
+        "ver": "unknown",
+        "Node name for S&R": "Save Text File"
+      },
+      "widgets_values": [
+        "",
+        "D:\\BaiduSyncdisk\\Works\\250305_V\\Output\\Noble\\bg",
+        "Noble",
+        "_",
+        4,
+        ".txt",
+        "utf-8",
+        ""
+      ]
+    },
+    {
+      "id": 16,
+      "type": "PreviewImage",
+      "pos": [
+        2898.0068359375,
+        712.422607421875
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "label": "images",
+          "type": "IMAGE",
+          "link": 13
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.21",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 41,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3204.79931640625,
+        1916.5499267578125
+      ],
+      "size": [
+        315,
+        112
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 43
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": [
+            49
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.1.1",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1741587837410262"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "easy string",
+      "pos": [
+        3210.354736328125,
+        2086.087158203125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            50
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "unknown",
+        "Node name for S&R": "easy string"
+      },
+      "widgets_values": [
+        "1741587837410262"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "MidjourneyActionNode",
+      "pos": [
+        3964.66650390625,
+        1962.9207763671875
+      ],
+      "size": [
+        352.79998779296875,
+        82
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "task_id"
+          },
+          "link": 51
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            44,
+            48
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "aux_id": "jiaqianjing/ComfyUI-MidjourneyHub",
+        "ver": "unknown",
+        "Node name for S&R": "MidjourneyActionNode"
+      },
+      "widgets_values": [
+        "",
+        "U4"
+      ]
+    },
+    {
+      "id": 49,
+      "type": "PreviewImage",
+      "pos": [
+        4459.947265625,
+        2215.8642578125
+      ],
+      "size": [
+        210,
+        26
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 48
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.21",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 50,
+      "type": "Switch any [Crystools]",
+      "pos": [
+        3578.7490234375,
+        1966.89453125
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_true",
+          "type": "*",
+          "link": 49
+        },
+        {
+          "name": "on_false",
+          "type": "*",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": [
+            51
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "09d84235d99789447d143c4a4907c2d22e452097",
+        "Node name for S&R": "Switch any [Crystools]"
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 51,
+      "type": "Note",
+      "pos": [
+        4054.542724609375,
+        1356.5096435546875
+      ],
+      "size": [
+        501.1112365722656,
+        158.07022094726562
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "先跑Main 关掉uuu\n遇到满意的跑uuu"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 12,
+      "type": "LoadImage",
+      "pos": [
+        -160.8513946533203,
+        528.1787719726562
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "label": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.21",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "bg2 (2).png",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 24,
+      "type": "LoadImage",
+      "pos": [
+        -163.2057342529297,
+        959.1922607421875
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "label": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.21",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "a467b91b33cd1ddf6353c0c0442fca82.png",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 38,
+      "type": "SaveImageToLocal",
+      "pos": [
+        2680.28759765625,
+        258.25689697265625
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 38
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImageToLocal"
+      },
+      "widgets_values": [
+        "D:\\BaiduSyncdisk\\Works\\250305_V\\Output\\Noble\\bg",
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 44,
+      "type": "SaveImageToLocal",
+      "pos": [
+        4475.8017578125,
+        1958.7197265625
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 44
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImageToLocal"
+      },
+      "widgets_values": [
+        "D:\\BaiduSyncdisk\\Works\\250305_V\\Output\\Noble\\bg",
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 15,
+      "type": "MidjourneyImagineNode",
+      "pos": [
+        2152.110595703125,
+        490.0315856933594
+      ],
+      "size": [
+        401.5577392578125,
+        571.0633544921875
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "sref",
+          "label": "sref",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            292.0000305175781
+          ],
+          "widget": {
+            "name": "sref"
+          },
+          "link": 23
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "pos": [
+            10,
+            76.00003051757812
+          ],
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 54
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "links": [
+            13,
+            38
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "task_id",
+          "label": "task_id",
+          "type": "STRING",
+          "links": [
+            42,
+            43
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "buttons",
+          "label": "buttons",
+          "type": "DICT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "jiaqianjing/ComfyUI-MidjourneyHub",
+        "ver": "unknown",
+        "Node name for S&R": "MidjourneyImagineNode"
+      },
+      "widgets_values": [
+        "an ultra-realistic 4K background image with a spacious, empty center dominating the composition, evoking a sense of vast openness. Surround this void with intricate, fine golden metal lines, delicately structured like filigree, reflecting soft, dynamic light with subtle metallic sheen. Frame the design with luxurious silky fabric in deep blue-black tones, its texture flowing naturally with gentle motion blur and dynamic shadows. Incorporate soft lighting to enhance the noble elegance, ensuring the upper half remains strikingly barren and uncluttered, amplifying the sense of emptiness, while the lower edges subtly transition into the detailed metal and fabric elements.",
+        "niji",
+        "6",
+        "1:1",
+        100,
+        0,
+        0,
+        false,
+        false,
+        "",
+        1,
+        1216,
+        "randomize",
+        true
+      ]
+    },
+    {
+      "id": 56,
+      "type": "TextInput_",
+      "pos": [
+        1237.0833740234375,
+        516.4556884765625
+      ],
+      "size": [
+        380.7745056152344,
+        112.97905731201172
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            53
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TextInput_"
+      },
+      "widgets_values": [
+        "Surround it with fine golden metal lines reflecting soft light, paired with silky blue-black fabric, subtly flowing with motion blur and dynamic shadows, all framed elegantly under soft lighting.\"",
+        true
+      ]
+    },
+    {
+      "id": 52,
+      "type": "Text Concatenate",
+      "pos": [
+        1681.8280029296875,
+        327.43988037109375
+      ],
+      "size": [
+        315,
+        238
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            84
+          ],
+          "widget": {
+            "name": "text_a"
+          },
+          "link": 52
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            108
+          ],
+          "widget": {
+            "name": "text_b"
+          },
+          "link": 53
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            132
+          ],
+          "widget": {
+            "name": "text_c"
+          },
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "shape": 7,
+          "pos": [
+            10,
+            156
+          ],
+          "widget": {
+            "name": "text_d"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            54,
+            55
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-node-suite-comfyui",
+        "ver": "unknown",
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        " ",
+        "false",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 57,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2173.58642578125,
+        332.92535400390625
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "pos": [
+            10,
+            36
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "link": 55
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.1.1",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 45,
+      "type": "Fast Groups Muter (rgthree)",
+      "pos": [
+        3730.6103515625,
+        1384.776611328125
+      ],
+      "size": [
+        270.13336181640625,
+        131.8479461669922
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 55,
+      "type": "TextInput_",
+      "pos": [
+        1235.3775634765625,
+        333.53265380859375
+      ],
+      "size": [
+        391.9050598144531,
+        98.81283569335938
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            52
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TextInput_"
+      },
+      "widgets_values": [
+        "a 4K ultra-realistic background image with a vast, empty upper center, stark and uncluttered, dominating the scene.",
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      10,
+      12,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      11,
+      11,
+      0,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      13,
+      15,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      24,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      25,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      28,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      32,
+      14,
+      0,
+      34,
+      0,
+      "STRING"
+    ],
+    [
+      34,
+      34,
+      0,
+      28,
+      0,
+      "STRING"
+    ],
+    [
+      38,
+      15,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      41,
+      26,
+      0,
+      34,
+      1,
+      "STRING"
+    ],
+    [
+      42,
+      15,
+      1,
+      42,
+      0,
+      "STRING"
+    ],
+    [
+      43,
+      15,
+      1,
+      41,
+      0,
+      "STRING"
+    ],
+    [
+      44,
+      35,
+      0,
+      44,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      35,
+      0,
+      49,
+      0,
+      "IMAGE"
+    ],
+    [
+      49,
+      41,
+      0,
+      50,
+      0,
+      "*"
+    ],
+    [
+      50,
+      48,
+      0,
+      50,
+      1,
+      "*"
+    ],
+    [
+      51,
+      50,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      52,
+      55,
+      0,
+      52,
+      0,
+      "STRING"
+    ],
+    [
+      53,
+      56,
+      0,
+      52,
+      1,
+      "STRING"
+    ],
+    [
+      54,
+      52,
+      0,
+      15,
+      1,
+      "STRING"
+    ],
+    [
+      55,
+      52,
+      0,
+      57,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 2,
+      "title": "Main",
+      "bounding": [
+        -173.2057342529297,
+        184.65689086914062,
+        3727.75390625,
+        1098.535400390625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 1,
+      "title": "UUU",
+      "bounding": [
+        3194.79931640625,
+        1842.949951171875,
+        1714.38671875,
+        444.6485595703125
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.3719008264463058,
+      "offset": [
+        -2236.5464435600843,
+        -319.71568180808526
+      ]
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
